@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="heart"></div>
+  <div class="caption">💖</div>
+
+  <script>
+    const body = document.body;
+    for (let i = 0; i < 25; i++) {
+      const s = document.createElement('div');
+      s.className = 'sparkle';
+      const size = Math.random() * 4 + 2;
+      s.style.width = size + 'px';
+      s.style.height = size + 'px';
+      s.style.left = (Math.random() * 100) + 'vw';
+      s.style.top = (Math.random() * 100) + 'vh';
+      s.style.animationDelay = (Math.random() * 3) + 's';
+      s.style.animationDuration = (2 + Math.random() * 3) + 's';
+      body.appendChild(s);
+    }
+  </script>
+</body>
+</html>
