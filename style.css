@@ -1,14 +1,22 @@
-html, body {
+html {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
   background: radial-gradient(circle at center, #2b0a1f, #0a0210 80%);
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
+  position: relative;
 }
 
 * {
@@ -17,15 +25,17 @@ html, body {
 
 .title {
   position: absolute;
-  top: 8%;
-  width: 100%;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
   text-align: center;
-  color: #ffd6e2;
+  color: #ffffff;
   font-family: 'Segoe UI', system-ui, sans-serif;
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 48px;
+  font-weight: 800;
   letter-spacing: 1px;
-  text-shadow: 0 0 20px rgba(255, 94, 142, 0.8), 0 0 40px rgba(255, 30, 76, 0.5);
+  text-shadow: 0 0 20px rgba(255, 94, 142, 0.9), 0 0 45px rgba(255, 30, 76, 0.6);
 }
 
 .heart {
